@@ -1,0 +1,31 @@
+<!-- Begin footer -->
+<footer class="footer">
+  <div class="footer_center">
+    <ul class="footer_li_container">
+      {% for nav in include.navigation %}
+        {% if nav.icon %}
+          <li class="footer_li">
+            <a class="footer_a" href="{{ nav.url }}" aria-label="{{ nav.title }}">
+              <img class="logo" src="{{ nav.icon | relative_url}}" alt="" />
+            </a>
+          </li>
+        {% else %}
+          {% if nav.url %}
+            <li class="footer_li">
+              <a class="footer_a" href="{{ nav.url }}" aria-label="{{ nav.title }}">
+                {{ nav.title }}
+              </a>
+            </li>
+          {% else %}
+            {{ nav.title }}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </ul>
+    <p class="footer_center">
+      <a href="mailto:hoshinomoribito.jp@gmail.com">お問い合わせ</a><br>
+      Copyright © 2020-2023 pto8913. All Right Reserved.<br>
+    </p>
+  </div>
+</footer>
+<!-- End footer -->

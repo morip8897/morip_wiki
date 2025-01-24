@@ -1,0 +1,13 @@
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+.vscode
+
+service_account.json
+sheet.json
+
+*__pycache__/
+
+.github/*

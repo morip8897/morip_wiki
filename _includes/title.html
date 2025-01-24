@@ -1,0 +1,13 @@
+<!-- from title.html -->
+{% if include.header %}
+  <a href="{{ site.homeURL | relative_url }}">ホーム</a>
+  {% for row in include.title %}
+    <a href="{{ row.url | relative_url }}"> | {{ row.title | escape }} </a>
+  {% endfor %}
+{% else %}
+  <link rel="shortcut icon" type="image/x-icon" href="{{ '/assets/images/pto8913.png' | relative_url }}">
+  <title>
+    ホーム
+    {% for row in include.title %} | {{ row.title | escape }}{% endfor %}
+  </title>
+{% endif %}

@@ -1,0 +1,33 @@
+<!-- Begin floating MenuBar -->
+<div class="menu_sticky">
+  <div class="menu_li_container">
+    <div>
+      <a href="{{ site.homeURL | relative_url }}" class="menu_title" id="menu_logo">
+        <img class="menu_logo" src="{{ '/assets/images/pto8913.png' | relative_url }}" alt="" />
+      </a>
+    </div>
+    {% for nav in include.navigation %}
+      {% if nav[1].first %}
+        <div class="menu_li">
+          <a class="menu_a">{{ nav[0] }}</a>
+          <div class="menu_dropdown_list_container">
+            {% for sub_page in nav[1] %}
+              <div class="menu_li menu_dropdown_list">
+                <a class="menu_a" href="{{ sub_page[1] | relative_url }}" aria-label="{{ sub_page[0] }}">
+                  {{ sub_page[0] }}
+                </a>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      {% else %}
+        <div class="menu_li">
+          <a class="menu_a" href="{{ nav[1] | relative_url }}" aria-label="{{ nav[0] }}">
+            {{ nav[0] }}
+          </a>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+<!-- End floating MenuBar -->

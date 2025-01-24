@@ -1,0 +1,140 @@
+.title
+  font-size: 1.25em
+
+.more
+  margin: 2em 0 1em
+
+.more a
+  border-radius: 2px
+  border: 1.5px solid $link-color
+  padding: .4em .8em
+  transition: .2s background, .2s color
+
+.more a:hover
+  color: rgb(255, 255, 255)
+  background: $link-color
+  text-decoration: inherit
+
+.archive
+  font-size: 1.1em
+
+.archive time
+  display: inline-block
+  min-width: 10ch
+  min-height: 1.75em
+  margin: 0 .2em
+
+.icon
+  height: 1em
+  width: 1em
+  fill: currentColor
+  transition: .2s color
+  vertical-align: middle
+  margin-bottom: .15em
+
+a:hover .icon
+  color: reduce(100)
+
+.full table
+  display: table
+  width: 100%
+
+.katex
+  overflow-x: auto
+  overflow-y: hidden
+
+.rouge-table
+  &, th, td, tr, pre
+    font-size: inherit
+    background: inherit !important
+    box-shadow: none
+    width: initial
+    margin: 0
+    padding: 0
+  .gl pre
+    margin: 0 1.5em 0 .25em
+    opacity: .5
+
+.highlight // https://github.com/richleland/pygments-css/blob/master/monokai.css <http://unlicense.org>
+  pre
+    background: rgba(lighten($frdark, 6%), 0.9)
+    color: white
+  .c
+    color: rgb(162, 159, 144)
+  .err
+    color: rgb(150, 0, 80)
+    background-color: rgb(30, 0, 16)
+  .k
+    color: rgb(102, 217, 239)
+  .l
+    color: rgb(174, 129, 255)
+  .n
+    color: rgb(248, 248, 242)
+  .o
+    color: rgb(249, 38, 114)
+  .p
+    color: rgb(248, 248, 242)
+  .cm, .cp, .c1, .cs
+    color: rgb(117, 113, 94)
+  .ge
+    font-style: italic
+  .gs
+    font-weight: bold
+  .kc, .kd
+    color: rgb(102, 217, 239)
+  .kn
+    color: rgb(249, 38, 114)
+  .kp, .kr, .kt
+    color: rgb(102, 217, 239)
+  .ld
+    color: rgb(230, 219, 116)
+  .m
+    color: rgb(174, 129, 255)
+  .s
+    color: rgb(230, 219, 116)
+  .na
+    color: rgb(166, 226, 46)
+  .nb
+    color: rgb(248, 248, 242)
+  .nc
+    color: rgb(166, 226, 46)
+  .no
+    color: rgb(102, 217, 239)
+  .nd
+    color: rgb(166, 226, 46)
+  .ni
+    color: rgb(248, 248, 242)
+  .ne, .nf
+    color: rgb(166, 226, 46)
+  .nl, .nn
+    color: rgb(248, 248, 242)
+  .nx
+    color: rgb(166, 226, 46)
+  .py
+    color: rgb(248, 248, 242)
+  .nt
+    color: rgb(249, 38, 114)
+  .nv
+    color: rgb(248, 248, 242)
+  .ow
+    color: rgb(249, 38, 114)
+  .w
+    color: rgb(248, 248, 242)
+  .mf, .mh, .mi, .mo
+    color: rgb(174, 129, 255)
+  .sb, .sc, .sd, .s2
+    color: rgb(230, 219, 116)
+  .se
+    color: rgb(174, 129, 255)
+  .sh, .si, .sx, .sr, .s1, .ss
+    color: rgb(230, 219, 116)
+  .bp, .vc, .vg, .vi
+    color: rgb(248, 248, 242)
+  .il
+    color: rgb(174, 129, 255)
+  .gu
+    color: rgb(117, 113, 94)
+  .gd
+    color: rgb(249, 38, 114)
+  .gi
+    color: rgb(166, 226, 46)

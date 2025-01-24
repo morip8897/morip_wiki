@@ -1,0 +1,109 @@
+<head>
+  <style>
+    .SortButtonArea{
+      line-height: 1;
+      display: grid;
+      position: relative;
+      right: -10;
+    }
+    /* === ソートボタン ============================== */
+    .SortButton {
+      display    : inline-block;
+      width      : 8px;
+      height     : 8px;
+      background : #eee;
+      border     : 1px solid #777;
+      margin     : 1px 1px;
+      /* padding    : 3px; */
+      cursor     : pointer;
+    }
+    /* === ソートボタン（カーソルオーバー時）========= */
+    .SortButton:hover{
+      background : #FFD700;
+    }
+    /* === ソートボタン内の三角の色（SVG）============ */
+    .SortButton path{
+      fill       : #777;
+    }
+
+    .SortTable {
+      width          : 100%;
+      border-collapse: collapse;
+      border-spacing : 0;
+      font-size      : 9pt;  
+    }
+    .thContainer {
+      display: flex; 
+    }
+    .SortTable th {
+      text-align    : center;
+      font-weight   : bold;
+      padding       : 6px 5px;
+      border        : 1px #666666 solid;
+      background    : #99ccff;
+      white-space   : nowrap;
+    }
+    .SortTable td {
+      text-align    : center;
+      padding       : 6px 5px;
+      border        : 1px #666666 solid;
+      white-space   : nowrap;
+    }
+    .SortTable th::before, .SortTable th::after {
+      content: "";
+      height: 8px;
+      width: 8px;
+      position: absolute;
+      border-top: 2px #888 solid;
+      border-right: 2px #888 solid;
+      right: 10px;
+      top: 50%;
+    }
+
+    .SortTable th::before {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+    .SortTable th::after {
+      transform: translateY(2px) rotate(135deg);
+    }
+    .indicator::before {
+      content: "";
+      height: 100px;
+      width: 100px;
+      position: absolute;
+      border-top: 10px solid;
+      border-right: 10px solid;
+      transform: translateY(20px) translateX(50px) rotate(-45deg);
+    }
+
+    .indicator::after {
+      content: "";
+      height: 100px;
+      width: 100px;
+      position: absolute;
+      border-top: 10px solid;
+      border-right: 10px solid;
+      transform: translateY(80px) translateX(50px) rotate(135deg);
+    }
+  </style>
+  <script src="{{ '/assets/js/SortTable.js' | relative_url }}"></script>
+</head>
+{% assign items = include.items %}
+<div>
+  <table id="SortTable">
+    {% for item in items %}
+      <tr>
+        {% for columnTitle in item.columnTitles %}
+          <th sortbutton>{{ columnTitle.title }}</th>
+        {% endfor %}
+      </tr>
+      {% for row in item.rows %}
+        <tr>
+          {% for column in row.row %}
+            <td>{{ column.title }}</td>
+          {% endfor %}
+        </tr>
+      {% endfor %}
+    {% endfor %}
+  </table>
+</div>

@@ -1,0 +1,49 @@
+{% if include.type %}
+  <{{ include.type }} class="category_ul">
+{% else %}
+  <ul class="category_ul">
+{% endif %}
+  {% for category in include.lists %}
+    {% assign subject_name = category.title %}
+    {% assign subject_contents = category.contents %}
+
+    {% if subject_contents %}
+      {% if include.active %}
+        <button type="button" class="collapse category_button active">
+      {% else %}
+        <button type="button" class="collapse category_button">
+      {% endif %}
+    {% endif %}
+    {% if category.url %}
+      {% if category.type == "absolute" %}
+        <li><a href="{{ category.url }}">{{ subject_name }}</a></li>
+      {% else %}
+      <li><a href="{{ category.url | relative_url }}">{{ subject_name }}</a></li>
+      {% endif %}
+    {% else %}
+      <li>{{ subject_name }}</li>
+    {% endif %}
+    {% if subject_contents %}
+      </button>
+      {% if include.active %}
+        {% if include.no_color %}
+          <li class="collapse_content_no_color" style="display: block">
+        {% else %}
+          <li class="collapse_content" style="display: block">
+        {% endif %}
+      {% else %}
+        {% if include.no_color %}
+          <li class="collapse_content_no_color" style="display: none">
+        {% else %}
+          <li class="collapse_content" style="display: none">
+        {% endif %}
+      {% endif %}
+      {% include category-recursive.html no_color=include.no_color type=include.type lists=subject_contents active=include.active %}
+      </li>
+    {% endif %}
+  {% endfor %}
+{% if include.type %}
+  </{{ include.type }}>
+{% else %}
+  </ul>
+{% endif %}
