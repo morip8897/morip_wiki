@@ -116,10 +116,10 @@ NavCategories:
           - title: "とこぷよ"
             img: "/Portfolio/DirectX/Game/TokoPuyo/TokoPuyo.png"
             url: "/Portfolio/DirectX/Game/TokoPuyo/TokoPuyo.html"
-      - title: "クライアント機からCycloneRegister360PLUSを使用したい場合"
-          img: ""
-          url: "/Wiki/Leica/License_CycloneRegister360PLUS.html"
-          type: "absolute"
+          - title: "クライアント機からCycloneRegister360PLUSを使用したい場合"
+              img: ""
+              url: "/Wiki/Leica/License_CycloneRegister360PLUS.html"
+              type: "absolute"
 
 # ------------------------------ Portfolio ------------------------------
 # ---------------- Portfolio Index ----------------
