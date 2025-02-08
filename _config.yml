@@ -24,10 +24,9 @@ title: morip8897
 author: morip8897
 #email: your-email@example.com
 #>- # this means to ignore newlines until "baseurl:"
-description: 制作物や知見を置いていく場所
+description: 3D周辺Wiki
 twitter_username: pitodesu
 github_username: morip8897
-
 
 lang: "jp"
 excerpt_separator: "\n\n\n"
@@ -49,10 +48,6 @@ permalink_pattern: /:dir/:categories/:title.html
 
 homeURL: "/home.html"
 baseURL: "https://morip8897.github.io/morip8897/home.html"
-KyoProURL: "https://morip8897.github.io/morip8897/KyoPro"
-PyQtURL: "https://morip8897.github.io/morip8897/PyQt5"
-UEURL: "https://morip8897.github.io/morip8897/UE4"
-HoshimoriURL: "https://morip8897.github.io/morip8897/Hoshimori"
 
 github: [metadata]
 repository: morip8897.github.io/morip8897
@@ -78,19 +73,13 @@ plugins:
 nav-header:                # accepts {file, title, url, icon, sidebaricon}
   ホーム: "/home.html"
   カテゴリ:
-    UnrealEngine: "/Portfolio/UnrealEngine/index.html"
-    DirectX: "/Portfolio/DirectX/index.html"
-    Unity: "/Portfolio/Unity/index.html"
-    Java: "/Portfolio/Java/index.html"
-
-  # ポートフォリオ: "/Portfolio/index.html"
+    Leica: "/Leica/index.html"
+    Elysium: "/Elysium/index.html"
+    全般: "/General/index.html"
 
 nav-footer:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Gmail, icon: '/assets/images/gmail.png', url: "mailto:pto8913project@gmail.com"}
   - {title: Github, icon: '/assets/images/github.png', url: "https://github.com/morip8897"}
-  - {title: HatenaBlog, icon: '/assets/images/hatenablog.png', url: "https://morip8897.hatenablog.com/"}
-  - {title: Youtube, icon: '/assets/images/youtube.png', url: "https://www.youtube.com/@morip8897/featured"}
-  - {title: Discord, icon: '/assets/images/discord.png', url: "https://discord.gg/mXntvZdCFf"}
 
 # NOTE: children allowed only url, contents, title.
 NavCategories:
@@ -98,10 +87,6 @@ NavCategories:
     url: "/Wiki/Elysium/index.html"
     contents:
       - title: "Tips"
-        contents:
-          - title: "星の守り人"
-            img: "/Portfolio/UnrealEngine/Game/Hoshimori/Hoshimori.png"
-            url: "/Portfolio/UnrealEngine/Game/Hoshimori/Hoshimori.html"
       - title: "Help"
         contents:
           - title: "クライアント機からInfiPointsを使用したい場合"
@@ -113,134 +98,12 @@ NavCategories:
     contents: 
       - title: "Tips"
         contents:
-          - title: "とこぷよ"
-            img: "/Portfolio/DirectX/Game/TokoPuyo/TokoPuyo.png"
-            url: "/Portfolio/DirectX/Game/TokoPuyo/TokoPuyo.html"
       - title: "Help"
         contents:
           - title: "クライアント機からCycloneRegister360PLUSを使用したい場合"
             img: ""
             url: "/Wiki/Leica/License_CycloneRegister360PLUS.html"
             type: "absolute"
-
-# ------------------------------ Portfolio ------------------------------
-# ---------------- Portfolio Index ----------------
-News:
-  星の守り人: "/Portfolio/UnrealEngine/Game/Hoshimori/Hoshimori"
-  とこぷよ: "/Portfolio/DirectX/Game/TokoPuyo/TokoPuyo"
-
-# ---------------- News ----------------
-news-UnrealEngine:
-  星の守り人: "/Portfolio/UnrealEngine/Game/Hoshimori/Hoshimori"
-news-DirectX:
-  とこぷよ: "/Portfolio/DirectX/Game/TokoPuyo/TokoPuyo"
-news-Unity:
-  Tappy Cube: "/Portfolio/Unity/Game/TappyCube/index"
-news-Java:
-  MusicPlayer for Windows: "/Portfolio/Java/Windows/MusicPlayer/MusicPlayer"
-
-# ------------------------------ Hoshimori ------------------------------
-Hoshimori-teaser-url: "https://www.youtube.com/embed/m7YOHEtjhbc?list=PL3Z_2bfv7lRMZESwtishkG8TPBxRLmcsP"
-
-nav-header-Portfolio-Hoshimori:
-  ホーム: "/Portfolio/UnrealEngine/Game/Hoshimori/Hoshimori.html"
-  物語 : "/Portfolio/UnrealEngine/Game/Hoshimori/story/index.html"
-  登場人物: "/Portfolio/UnrealEngine/Game/Hoshimori/Characters/Tolemy.html"
-  プレイ映像: "/Portfolio/UnrealEngine/Game/Hoshimori/capture/index.html"
-  守護者の力: "/Portfolio/UnrealEngine/Game/Hoshimori/metamorphosis/index.html"
-  アクション: "/Portfolio/UnrealEngine/Game/Hoshimori/action/index.html"
-  敵キャラクター:
-    マブリン系: "/Portfolio/UnrealEngine/Game/Hoshimori/enemy/Mablin.html"
-    タロス系: "/Portfolio/UnrealEngine/Game/Hoshimori/enemy/Talos.html"
-    ライオ系: "/Portfolio/UnrealEngine/Game/Hoshimori/enemy/Lio.html"
-    ピスケ系: "/Portfolio/UnrealEngine/Game/Hoshimori/enemy/Pisce.html"
-    リザード系: "/Portfolio/UnrealEngine/Game/Hoshimori/enemy/Lizard.html"
-    魔法使い系: "/Portfolio/UnrealEngine/Game/Hoshimori/enemy/Magician.html"
-    カニ系: "/Portfolio/UnrealEngine/Game/Hoshimori/enemy/Cancer.html"
-    ドラゴン系: "/Portfolio/UnrealEngine/Game/Hoshimori/enemy/Dragon.html"
-    タウロス: "/Portfolio/UnrealEngine/Game/Hoshimori/enemy/Taurus.html"
-    レオ: "/Portfolio/UnrealEngine/Game/Hoshimori/enemy/Leo.html"
-    ヴァルゴ: "/Portfolio/UnrealEngine/Game/Hoshimori/enemy/Virgo.html"
-    魔王: "/Portfolio/UnrealEngine/Game/Hoshimori/enemy/Typhon.html"
-  UI: "/Portfolio/UnrealEngine/Game/Hoshimori/ui/index.html"
-  レベルデザイン: "/Portfolio/UnrealEngine/Game/Hoshimori/level/index.html"
-
-hoshimori-character:
-  ベータ : "/Portfolio/UnrealEngine/Game/Hoshimori/Characters/Beta"
-  トレミー : "/Portfolio/UnrealEngine/Game/Hoshimori/Characters/Tolemy"
-  アルファ : "/Portfolio/UnrealEngine/Game/Hoshimori/Characters/Alpha"
-  アリエ : "/Portfolio/UnrealEngine/Game/Hoshimori/Characters/Arie"
-  リブラ : "/Portfolio/UnrealEngine/Game/Hoshimori/Characters/Libra"
-  エルダ : "/Portfolio/UnrealEngine/Game/Hoshimori/Characters/Elda"
-  タウロス : "/Portfolio/UnrealEngine/Game/Hoshimori/Characters/Taurus"
-  ヴァルゴ : "/Portfolio/UnrealEngine/Game/Hoshimori/Characters/Virgo"
-  レオ : "/Portfolio/UnrealEngine/Game/Hoshimori/Characters/Leo"
-  ピス : "/Portfolio/UnrealEngine/Game/Hoshimori/Characters/Pis"
-  アクア : "/Portfolio/UnrealEngine/Game/Hoshimori/Characters/Aqua"
-  ケス : "/Portfolio/UnrealEngine/Game/Hoshimori/Characters/Ces"
-  ステラ : "/Portfolio/UnrealEngine/Game/Hoshimori/Characters/Stella"
-
-img-hoshimori-character-bg:
-  ホーム : "/Portfolio/UnrealEngine/Game/Hoshimori/Hoshimori.png"
-  ベータ : "/Portfolio/UnrealEngine/Game/Hoshimori/Characters/Background_Beta.png"
-  トレミー : "/Portfolio/UnrealEngine/Game/Hoshimori/Characters/Background_Tolemy.png"
-  アルファ : "/Portfolio/UnrealEngine/Game/Hoshimori/Characters/Background_Alpha.png"
-  アリエ : "/Portfolio/UnrealEngine/Game/Hoshimori/Characters/Background_Arie.png"
-  リブラ : "/Portfolio/UnrealEngine/Game/Hoshimori/Characters/Background_Libra.png"
-  エルダ : "/Portfolio/UnrealEngine/Game/Hoshimori/Characters/Background_Elda.png"
-  タウロス : "/Portfolio/UnrealEngine/Game/Hoshimori/Characters/Background_Taurus.png"
-  ヴァルゴ : "/Portfolio/UnrealEngine/Game/Hoshimori/Characters/Background_Virgo.png"
-  レオ : "/Portfolio/UnrealEngine/Game/Hoshimori/Characters/Background_Leo.png"
-  ピス : "/Portfolio/UnrealEngine/Game/Hoshimori/Characters/Background_PisCes.png"
-  アクア : "/Portfolio/UnrealEngine/Game/Hoshimori/Characters/Background_Aqua.png"
-  ケス : "/Portfolio/UnrealEngine/Game/Hoshimori/Characters/Background_PisCes.png"
-  ステラ : "/Portfolio/UnrealEngine/Game/Hoshimori/Characters/Background_Aqua.png"
-
-# ------------------------------ PtoInventorySystem ------------------------------
-NavPtoInventorySystem:
-  - title: "API"
-    url: "/Portfolio/UnrealEngine/Plugins/PtoInventorySystem/PtoInventorySystem.html"
-    contents:
-      - title: "PtoInventoryComopnentBase"
-        url: "/Portfolio/UnrealEngine/Plugins/PtoInventorySystem/API/PtoInventoryComponentBase.html"
-
-# ------------------------------ PtoTalkSystem ------------------------------
-NavPtoTalkSystem:
-  - title: "Tutorial"
-    url: "/Portfolio/UnrealEngine/Plugins/PtoTalkSystem/Tutorial/index.html"
-    contents:
-      - title: "プラグインを追加する"
-        url: "/Portfolio/UnrealEngine/Plugins/PtoTalkSystem/Tutorial/AddPlugin.html"
-      - title: "アセットの作成"
-        url: "/Portfolio/UnrealEngine/Plugins/PtoTalkSystem/Tutorial/CreateAsset.html"
-      - title: "エディター"
-        url: "/Portfolio/UnrealEngine/Plugins/PtoTalkSystem/Tutorial/PtoTalkGraphEditor.html"
-  - title: "API"
-    url: "/Portfolio/UnrealEngine/Plugins/PtoTalkSystem/API/index.html"
-    contents:
-      - title: "PtoTalkGraph"
-        url: "/Portfolio/UnrealEngine/Plugins/PtoTalkSystem/API/PtoTalkGraph.html"
-      - title: "PtoTalkNode"
-        url: "/Portfolio/UnrealEngine/Plugins/PtoTalkSystem/API/PtoTalkNode.html"
-        contents:
-          - title: "PtoTalkNode_Proxy"
-            url: "/Portfolio/UnrealEngine/Plugins/PtoTalkSystem/API/PtoTalkNode_Proxy.html"
-          - title: "PtoTalkNode_Message"
-            url: "/Portfolio/UnrealEngine/Plugins/PtoTalkSystem/API/PtoTalkNode_Message.html"
-          - title: "PtoTalkNode_Condition"
-            url: "/Portfolio/UnrealEngine/Plugins/PtoTalkSystem/API/PtoTalkNode_Condition.html"
-          - title: "PtoTalkNode_Choice"
-            url: "/Portfolio/UnrealEngine/Plugins/PtoTalkSystem/API/PtoTalkNode_Choice.html"
-          - title: "PtoTalkNode_CustomEvent"
-            url: "/Portfolio/UnrealEngine/Plugins/PtoTalkSystem/API/PtoTalkNode_CustomEvent.html"
-          - title: "PtoTalkNode_RunSubTalkGraph"
-            url: "/Portfolio/UnrealEngine/Plugins/PtoTalkSystem/API/PtoTalkNode_RunSubTalkGraph.html"
-          - title: "PtoTalkNode_JumpToProxy"
-            url: "/Portfolio/UnrealEngine/Plugins/PtoTalkSystem/API/PtoTalkNode_JumpToProxy.html"
-          - title: "PtoTalkNode_End"
-            url: "/Portfolio/UnrealEngine/Plugins/PtoTalkSystem/API/PtoTalkNode_End.html"
-      
-
 
 # Exclude from processing.
 # The following items will not be processed, by default.
